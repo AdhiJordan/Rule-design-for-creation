@@ -177,9 +177,9 @@ export default class NewRule extends React.Component {
                <TableRowColumn></TableRowColumn></TableRow>)}
 
 
-          <div className="shadeForTrueButton">
+          
        <span>{rule.trueButton}</span>
-       </div>
+     
         </TableBody>
         </Table>
         </CardText> 
