@@ -47,7 +47,7 @@ import RulePage from 'rule/RulePage';
                 locationPlace: "",
                 location: [],
                 opacity: 1,
-                checked: false,
+                checkedAge: true,
                 toggleCheckbox: true,
                 toggleLocation: false,
                 locationChecked: true,
@@ -111,8 +111,17 @@ import RulePage from 'rule/RulePage';
                   gender: this.state.checked
                 }
                 this.props.actions.createCustomer(customerData);
+                this.resetCustomerValue()
 
 
+        }
+        resetCustomerValue() {
+          this.setState({ customerName: ''});
+          this.setState({age: {fromAge: '', toAge: ''}});
+          this.setState({ spends: {fromSpends: '', toSpends: '' }});
+          this.setState({location: []});
+          this.setState({locationPlace: ""});
+          this.setState({checked: ""});
         }
         deleteAttr(places, event, index) {
 
@@ -197,7 +206,7 @@ import RulePage from 'rule/RulePage';
         addChecked(e, a) {
           
                let age = this.state.age
-               this.setState({checked: !this.state.checked});
+               this.setState({checkedAge: !this.state.checkedAge});
                if(a == false) {
                   this.setState({toggleCheckbox: !this.state.toggleCheckbox});
                }
@@ -313,7 +322,7 @@ import RulePage from 'rule/RulePage';
                       <Checkbox
                           label="AGE"
                           onCheck={this.addChecked}
-                          checked={this.state.checked}
+                          checked={this.state.checkedAge}
                           />     
                           </div>                   
               {toggleCheckbox ?

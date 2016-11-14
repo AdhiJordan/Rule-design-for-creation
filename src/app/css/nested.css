@@ -1,12 +1,16 @@
 @charset 'utf-8';
 @import '../../../node_modules/basscss/css/basscss.css';
 @import '../../../node_modules/react-select/dist/react-select.css';
+.duplicateDesignNested {
+        margin-left: 64px;
+    margin-top: 1px;
+}
 .insideRectangle {
-	  width: 1258px;
-  margin-top: 19px;
-  margin-left: 11px;
-  height: 95.5px;
-  background-color: #ffffff;
+  width: 1315px;
+    margin-top: 19px;
+    margin-left: 12px;
+    height: 95.5px;
+    background-color: #ffffff;
 }
   .RectangleClose {
     float: right;

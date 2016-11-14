@@ -121,7 +121,7 @@ class NotOfNested extends React.Component {
   							</div>
 		          
 	  					</div>
-	  					<div>
+	  					<div className="duplicateDesignNested">
 	  					<a onClick={onChange}>
   						<div className="duplicateNested">
   						</div>

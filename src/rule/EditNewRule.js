@@ -33,8 +33,8 @@ import EditCustomerSegment from 'views/input-fields/EditCustomerSegment';
 
 const styles = {
   newEntityPaper: {
-    width: 1279,
-    marginLeft: 20,
+    width: 1360,
+    marginLeft: 35,
     float: 'left',
   },
     addLabel: {

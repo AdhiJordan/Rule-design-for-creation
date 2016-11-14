@@ -42,8 +42,8 @@ const iChars = "!@#$%^&*()+=-[]\\\';,./{}|\":<>?~`";
 
 const styles = {
   newEntityPaper: {
-    width: 1279,
-    marginLeft: 20,
+    width: 1360,
+    marginLeft: 30,
     float: 'left',
   },
     addLabel: {
@@ -79,7 +79,8 @@ class RulePage extends React.Component {
            toggleForCustomer: false,
            toggleEntity: true,
            toggleForCreateRule: false,
-           opacity: 1
+           opacity: 1,
+           toggleEntitySecondTime: true
            
         };
           this.deleteCustomer = this.deleteCustomer.bind(this);
@@ -119,7 +120,7 @@ class RulePage extends React.Component {
         }
         toggleEntitySecond() {
            alert("inside dhoni");
-          this.setState({toggleEntitySecondTime: false});
+          this.setState({toggleForCreateRule: false});
          
         }
         radioOneChange(e, value) {   
@@ -166,7 +167,15 @@ class RulePage extends React.Component {
             trueButton: this.state.checked} 
             this.props.actions.createEntity(ruletwo);
             this.closeCreateRule()
+            this.resetRuleValue()
 
+        }
+        resetRuleValue() {
+          alert("we are in reset mode");
+          this.setState({newRule: {ruleName: '', entityType: ''} });
+          this.setState({ arraynot: [] });
+          this.setState({ arrayNested: [] });
+          this.setState({ arrayCustomer: [] });
         }
         closeCreateRule() {
           this.setState({toggleForCreateRule: !this.state.toggleForCreateRule});
@@ -380,7 +389,6 @@ class RulePage extends React.Component {
           
               <div className="textFirst">SINGLE CONDITION</div>
           </a>
-
           </div>
           <div className="nestedSecond">
           <a onClick={this.toggleSquare}>
@@ -390,15 +398,12 @@ class RulePage extends React.Component {
               <div className="textSecond">NESTED CONDITION</div>
           </a>
           </div>
-
-
           <div className="customerThird">
           <a onClick={this.toggleCustomer}>
               <div className="imageCustomer">
               <img src="images/add-a-segment.svg" width='23' height='23' />
               </div>
               <div className="textThird">CUSTOMER SEGMENT</div>
-
           </a>
           </div>
           
@@ -406,7 +411,6 @@ class RulePage extends React.Component {
           {this.state.arraynot}
           {this.state.arrayNested}
           {this.props.customer.customers.map((customer, index) => <NotCustomer key={index} customer={customer} deleteCustomer={this.deleteCustomer.bind(this,index, customer.id)} />)}
-
         </div>
         <div className="adjustIt">
         </div>
@@ -418,9 +422,7 @@ class RulePage extends React.Component {
         value="ifAllTrue"
         label="IF ALL TRUE"
         style={styles.labelStyle}
-
       />
-
           <RadioButton
       name="ifAnyTrue"
         value="ifAnyTrue"
@@ -430,7 +432,6 @@ class RulePage extends React.Component {
       />
     </RadioButtonGroup>
     </div>
-
       
         <div className="addButtonDisplay">
         <RaisedButton icon={<img src="images/tick.png" />} label={"ADD RULE"} labelStyle={styles.addLabel} labelColor="#fff"  backgroundColor="#00bfa5"  onClick={this.addAttribute} />
@@ -438,41 +439,39 @@ class RulePage extends React.Component {
       </div>
       
         
-
 {this.customerSegment()}
-
     
 </div>
               </Paper>
              
               </div>
-
             }
             </div> 
           }
+
+
+
           </div>
           
           
             }
-
-            {_(_.clone(main.rules)).reverse().map((rule) => <ShowEditDetails deleteCustomer={this.deleteCustomer.bind(this)} customer={this.props.customer.customers} rule={rule} style={styles.newCard} toggleEntity={this.toggleEntityFromNewCard} opacity={opacity} hideNewCard={this.hideNewCard}/>).value() }
+            {_(_.clone(main.rules)).reverse().map((rule) => <ShowEditDetails
+             deleteCustomer={this.deleteCustomer.bind(this)}
+              customer={this.props.customer.customers}
+               rule={rule} style={styles.newCard}
+                toggleEntity={this.toggleEntityFromNewCard}
+                 opacity={opacity} hideNewCard={this.hideNewCard}/>).value() }
           </div>
-
         );
 }
 }
-
 RulePage.propTypes = {
-
     main: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired
-
 };
-
 const selector = createSelector(
   state => state.main,
   state => state.customer,
   (main, customer) => ({ main, customer })
 )
-
 export default connect(selector, bindDispatch)(RulePage);

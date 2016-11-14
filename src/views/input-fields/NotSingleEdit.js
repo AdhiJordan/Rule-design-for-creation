@@ -130,7 +130,7 @@ class NotSingleEdit extends React.Component {
 		    			 />
   						</div>
 	  					</div>
-	  					<div>
+	  					<div className="editDuplicateForSingleCondition">
 	  					<a onClick={onChange}>
   						<div className="duplicate">
   						</div>

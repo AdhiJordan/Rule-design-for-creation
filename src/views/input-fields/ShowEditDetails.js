@@ -3,22 +3,31 @@ import {Card, IconButton, CardHeader, CardText, Table, TableBody, TableRow, Tabl
 import EditNewRule from 'rule/EditNewRule';
 import NewRule from 'rule/NewRule';
 import 'app/css/app.css'
+import {Paper} from 'material-ui';
 import classNames from 'classnames'
 const styles = {
 	border: {
-      width: 1280,//250px
+      width: 1360,//250px
       float: 'left',
       overflow: 'auto',
       overflowY: 'hidden',
       border: '4px solid #f5f5f5',
-      marginLeft: 15,
+      marginLeft: 35,
       marginTop: 25,
       
 	},
-
+  newEntityPaper: {
+    width: 1360,
+    marginLeft: 40,
+    float: 'left',
+    height: 50,
+    marginTop: 25,
+    backgroundColor: '#f5f5f5',
+  },
 	header: {
 		backgroundColor: '#f5f5f5',
 		height: 55,
+    opacity: 1,
 
 	}, 
 	cardText: {
@@ -34,8 +43,8 @@ const styles = {
 		fontSize: 29,
     fontFamily: 'Work Sans',
     color: '#464646',
-		position: 'relative',
 		bottom: 10,
+    marginTop: 5,
 	},
 	Xbtn: {
 		textDecoration: 'none',	
@@ -71,7 +80,7 @@ export default class ShowEditDetails extends React.Component {
         super(props, context);
           this.state = {
              open: false,
-             showCard: true,
+             showCard: true
           };
           this.handleOpen = this.handleOpen.bind(this);
           this.handleClose = this.handleClose.bind(this);
@@ -79,11 +88,12 @@ export default class ShowEditDetails extends React.Component {
           // this.updateEntity = this.updateEntity.bind(this);
           this.showCardToggle = this.showCardToggle.bind(this);
           this.deleteEntity = this.deleteEntity.bind(this);
-
+        
 }
 // componentWillUpdate() {
 // 	this.setState({showCard: true})
 // }
+
   handleOpen(e) {
   	e.preventDefault()
      if(this.props.opacity.opacity === 0.5) {
@@ -176,14 +186,16 @@ export default class ShowEditDetails extends React.Component {
             'CustomerSegmentValueHideNewCart': opacity.opacity === 0.5
 
         })
+
 	return (
     <div>
 		<div>
+    
 		{this.state.showCard ? 
-		<Card style={Object.assign(styles.border, opacity)}>
-		<CardHeader style={styles.header}>
+		
      
-     
+      <Paper style={Object.assign(styles.newEntityPaper)}
+                   zDepth={2}>
 		    <span style={styles.entityName}>{rule.ruleName} for {rule.entityType}</span>
         <div className="overAllDesign">
         <div>
@@ -210,10 +222,10 @@ export default class ShowEditDetails extends React.Component {
         </div>
         </div>
      </div>
-    </CardHeader>
-      
-        </Card> : <NewRule customer={this.props.customer} rule={rule} style={styles.newCard} deleteCustomer={this.props.deleteCustomer}
-        toggleEntity={this.toggleEntityFromNewCard} opacity={opacity}
+     </Paper>
+    : <NewRule customer={this.props.customer} rule={rule} style={styles.newCard} deleteCustomer={this.props.deleteCustomer}
+        toggleEntity={this.toggleEntityFromNewCard}
+         opacity={opacity} 
          hideNewCard={this.hideNewCard}/> }
   </div>
 

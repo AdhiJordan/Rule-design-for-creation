@@ -13,7 +13,7 @@ import AttributeSingle from 'views/AttributeSingle'
     fontFamily: 'Work Sans',
     fontSize: 20,
     fontWeight: 'normal',
-    marginLeft: 160,
+    marginLeft: 183,
     marginTop: -16,
   }
 }

@@ -1,12 +1,20 @@
 @charset 'utf-8';
 @import '../../../node_modules/basscss/css/basscss.css';
 @import '../../../node_modules/react-select/dist/react-select.css';
+.editDuplicateForSingleCondition {
+  margin-left: 65px;
+  margin-top: 3px;
+}
+.duplicateDesign {
+         margin-left: 65px;
+    margin-top: 3px;
+}
 .insideFirstRectangle {
-  width: 1258px;
-  margin-top: 19px;
-  margin-left: 11px;
-  height: 95.5px;
-  background-color: #ffffff;
+  width: 1315px;
+    margin-top: 19px;
+    margin-left: 12px;
+    height: 95.5px;
+    background-color: #ffffff;
 
 }
 .imgRectangleSingle {

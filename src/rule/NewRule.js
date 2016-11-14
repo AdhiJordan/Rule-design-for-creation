@@ -6,12 +6,13 @@ import classNames from 'classnames'
 import NotCustomer from 'views/input-fields/NotCustomer';
 const styles = {
 	border: {
-      width: 1300,//250px
+      width: 1360,//250px
       float: 'left',
       overflow: 'auto',
       overflowY: 'hidden',
       border: '4px solid #00bfa5',
-      marginLeft: 15,
+      marginLeft: 35,
+      marginTop: 30,
       
 	},
 
@@ -70,7 +71,7 @@ export default class NewRule extends React.Component {
         super(props, context);
           this.state = {
              open: false,
-             showCard: true,
+             showCard: true
           };
           this.handleOpen = this.handleOpen.bind(this);
           this.handleClose = this.handleClose.bind(this);
@@ -89,6 +90,7 @@ export default class NewRule extends React.Component {
       return ''
      }
     this.setState({open: true});
+
   }
 
   handleClose() {

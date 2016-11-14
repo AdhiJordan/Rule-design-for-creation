@@ -127,7 +127,7 @@ class NotSingle extends React.Component {
 		    			 />
   						</div>
 	  					</div>
-	  					<div>
+	  					<div className="duplicateDesign">
 	  					<a onClick={onChange}>
   						<div className="duplicate">
   						</div>
