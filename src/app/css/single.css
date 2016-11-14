@@ -1,0 +1,96 @@
+@charset 'utf-8';
+@import '../../../node_modules/basscss/css/basscss.css';
+@import '../../../node_modules/react-select/dist/react-select.css';
+.insideFirstRectangle {
+  width: 1258px;
+  margin-top: 19px;
+  margin-left: 11px;
+  height: 95.5px;
+  background-color: #ffffff;
+
+}
+.imgRectangleSingle {
+	margin-left: 20px;
+    width: 22px;
+}
+  .firstRectangleClose {
+    float: right;
+    margin-top: 8px;
+    margin-right: 3px;
+  }
+  .firstRectangleClose a {
+    text-decoration: none;
+    color: #888484;
+    font-size: 20px;
+  }
+  .firstRectangleClose a:focus, .firstRectangleClose a:hover {
+    text-decoration: none;
+  }
+  .textNotOf {
+   font-size: 13px;
+   font-family: WorkSans;
+   margin-top: 10px;
+   margin-left: 33px;
+   width: 48px;
+}
+.checkboxAlignment {
+	margin-left: 50px;
+      width: 25px;
+}
+.checkboxFiveInput {
+	border-radius: none;
+	width: 20px;
+	height: 20px;
+
+}
+.duplicate {
+  width: 10px;
+  height: 12px;
+  background-color: #ffffff;
+  border: solid 1px #464646;
+      margin-left: 1200px;
+    margin-top: -15px;
+
+}
+.duplicateSecond {
+  width: 10px;
+  height: 12px;
+  background-color: #ffffff;
+  border: solid 1px #464646;
+      margin-left: 1203px;
+    margin-top: -9px
+}
+.textOperand {
+    margin-left: 464px;
+    margin-top: -48px;
+    width: 70px;
+}
+.textOperatorFunction{
+    margin-left: 705px;
+    width: 157px;
+    margin-top: -62px;
+}
+.textConstant {
+	margin-left: 1000px;
+    margin-top: -66px;
+    width: 77px;
+}
+.dropDown {
+      width: 1130px;
+}
+.textInputConstant {
+      height: 20px;
+    width: 131px;
+    margin-left: 981px;
+    margin-top: -41px;
+}
+.dropOperand {
+      width: 134px;
+    height: 43px;
+    margin-left: 434px;
+}
+.dropOperator {
+      width: 134px;
+    height: 43px;
+    margin-left: 716px;
+}

@@ -1,0 +1,17 @@
+@charset 'utf-8';
+@import '../../../node_modules/basscss/css/basscss.css';
+@import '../../../node_modules/react-select/dist/react-select.css';
+
+.outerRectangle {
+  width: 1315px;
+  height: 172px;
+  background-color: #464646;
+  margin-top: -20px;
+}
+.casaLogo {
+	width: 205px;
+    height: 35px;
+    margin-left: 60px;
+    margin-top: -139px;
+    margin-bottom: 220px;
+}

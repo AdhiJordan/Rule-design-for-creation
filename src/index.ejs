@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta charset="utf-8"/>
+ <title>CASA ENTITY</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+</head>
+<body>
+
+<div id="root"></div>
+<% if (htmlWebpackPlugin.options.trackJSToken) { %>
+  <script>window._trackJs = {token: '<%= htmlWebpackPlugin.options.trackJSToken %>'};</script>
+  <script src="https://d2zah9y47r7bi2.cloudfront.net/releases/current/tracker.js"></script>
+  <% } %>
+
+</body>
+</html>

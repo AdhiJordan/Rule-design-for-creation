@@ -1,0 +1,93 @@
+@charset 'utf-8';
+@import '../../../node_modules/basscss/css/basscss.css';
+@import '../../../node_modules/react-select/dist/react-select.css';
+.insideRectangle {
+	  width: 1258px;
+  margin-top: 19px;
+  margin-left: 11px;
+  height: 95.5px;
+  background-color: #ffffff;
+}
+  .RectangleClose {
+    float: right;
+    margin-top: 8px;
+    margin-right: 3px;
+  }
+  .RectangleClose a {
+    text-decoration: none;
+    color: #888484;
+    font-size: 20px;
+  }
+  .RectangleClose a:focus, .RectangleClose a:hover {
+    text-decoration: none;
+  }
+  .RectangleNested {
+  		margin-left: 20px;
+    width: 22px;
+  }
+  .textNotOfNested{
+  	   font-size: 13px;
+   font-family: WorkSans;
+   margin-top: 10px;
+   margin-left: 33px;
+   width: 48px;
+  }
+  .duplicateNested {
+  width: 10px;
+  height: 12px;
+  background-color: #ffffff;
+  border: solid 1px #464646;
+      margin-left: 1200px;
+    margin-top: -50px;
+  }
+  .duplicateSecondNested{
+      width: 10px;
+  height: 12px;
+  background-color: #ffffff;
+  border: solid 1px #464646;
+      margin-left: 1203px;
+    margin-top: -9px
+  }
+  .textFetchFunctionNested {
+        margin-left: 186px;
+    margin-top: -53px;
+    width: 125px;
+  }
+  .textOperandNested {
+    margin-left: 464px;
+    margin-top: -62px;
+    width: 70px;
+  }
+  .textOperatorFunctionNested {
+    margin-left: 705px;
+    margin-top: -60px;
+    width: 157px;
+  }
+  .textConstantNested {
+        margin-left: 285px;
+    margin-top: -83px;
+    width: 77px;
+  }
+  .dropFetchFunction {
+        height: 42px;
+    width: 130px;
+    margin-left: 182px;
+  }
+  .dropOperandValueNested {
+        margin-top: -2px;
+    height: 41px;
+
+    width: 137px;
+    margin-left: 437px;
+  }
+  .dropOperatorFunctionNested {
+        width: 137px;
+    height: 41px;
+    margin-left: 716px;
+    margin-top: 60px;
+  }
+  .textConstantValueNested {
+        margin-left: 263px;
+    width: 137px;
+    height: 41px;
+  }

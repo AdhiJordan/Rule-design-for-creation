@@ -1,0 +1,334 @@
+@charset 'utf-8';
+@import '../../../node_modules/basscss/css/basscss.css';
+@import '../../../node_modules/react-select/dist/react-select.css';
+
+/* .newEntity {
+    width: 300;
+    height: 100;
+    margin-top: 20;
+    margin-left: 20;
+  }*/
+  .shadeForTrueButton {
+    
+  }
+  .overAllDesign {
+    margin-top: -38px;
+  }
+  .singleConditionValue {
+    margin-left: 17px;
+  }
+  .singleBtn{
+    margin-left: 500px;
+    margin-top: 5px;
+  }
+  .nestedConditionValue {
+    margin-left: 19px;
+  }
+  .nestedBtn {
+margin-left: 110px;
+  }
+  .CustomerSegmentValue {
+    margin-left: 20px;
+  }
+  .customerBtn {
+margin-left: 110px;
+  }
+  .designForSingle {
+    margin-left: 20px;
+  }
+  .locationDown {
+        width: 86px;
+    margin-top: 5px;
+  }
+  .displayList {
+        margin-left: 238px;
+    margin-top: -7px;
+  }
+.newText {
+  margin-left: 100px;
+}
+.newSelect {
+  margin-left: 400px;
+}
+.newEntityLabel {
+  font-family: 'Work Sans';
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  color: #464646;
+}
+  .cf:after {
+    clear: both;
+    display: table;
+    content: '';
+  }
+
+  .entityClose {
+    float: right;
+    margin-top: 8px;
+    margin-right: 3px;
+  }
+  .entityClose a {
+    text-decoration: none;
+    color: #888484;
+    font-size: 20px;
+  }
+  .entityClose a:focus, .entityClose a:hover {
+    text-decoration: none;
+  }
+  .toggleEntity {
+    float: left;
+    margin-left: 20px;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .toggleEntityOpacity {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .entityLabel {
+    color: #000; 
+  }
+  .addBtn {
+    background-color: #00bfa5;
+    color: #fff;
+  }
+  .not-active-true {
+ 
+ cursor: not-allowed;
+ /*pointer-events: none;*/
+}
+  .not-active-false {
+ /*pointer-events: none;*/
+ cursor: pointer;
+}
+.attributeForm {
+   padding-left: 3px;
+   height: 56px;
+   margin-top: 3px;
+}
+.newLabel {
+  font-family: 'Work Sans';
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #464646;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  float: left;
+}
+.clearAll {
+  float: right;
+  margin-top: -26px;
+  margin-right: 5px;
+}
+.clearAll a{
+  text-decoration: none;
+  color: #dc7a34;
+}
+.clearAll a:focus, .clearAll a:hover {
+  text-decoration: none;
+}
+.attributesCount {
+  font-family: 'Work Sans';
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  color: #00bfa5;
+}
+.aa {
+  background-color: #ffffff;
+}
+.triangle-btn {
+  margin-top: 30px;
+}
+.triangle-btn img {
+  margin-top: 4px;
+}
+.triangle-btn span {
+  border: 1px solid #00bfa5;
+  padding: 7px 2px;
+  margin-top: 6px;
+  color: #fff;
+  background-color: #00bfa5;;
+}
+.newEntity {
+  width: 310px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+.entityPlusBtn {
+  border: 4px solid #00bfa5;
+  padding: 10px;
+  color: #00bfa5;
+  font-size: 20px;
+}
+.plusBtn {
+  margin-top: 10px;
+  float: right;
+  
+}
+.plusBtn:focus, .plusBtn:hover {
+  cursor: pointer;
+}
+.plusBtnHover:focus, .plusBtnHover:hover {
+  cursor: not-allowed;
+}
+.delBtn {
+    margin-right: 10px;
+    color: #000;
+    opacity: 0.4;
+  }
+  .editBtn {
+    margin-right: 18px;
+    color: #000;
+    opacity: 0.4;
+  }
+
+  .editDelBtn {
+    float: right;
+    margin-top: 5px;
+  }
+.editBtn:focus, .editBtn:hover {
+  opacity: 1.0;
+  font-weight: bold;
+  cursor: pointer;
+ /* font-size: 15px;*/
+
+}
+.editBtnHideNewCart:focus, .editBtnHideNewCart:hover {
+  opacity: 0.4;
+  font-weight: normal;
+  cursor: not-allowed;
+ /* font-size: 15px;*/
+
+}
+.delBtn:focus, .delBtn:hover {
+  opacity: 1;
+  font-weight: bold;
+  cursor: pointer;
+  /*font-size: 15px;*/
+}
+.delBtnHideNewCart:focus, .delBtnHideNewCart:hover {
+  opacity: 0.4;
+  font-weight: normal;
+  cursor: not-allowed;
+  /*font-size: 15px;*/
+}
+
+.plusBtnIcon {
+  border: 1px solid #00bfa5;
+  color: #fff;
+  background-color: #00bfa5;
+  padding: 1px;
+}
+.plusBtnLabel {
+  color: #00a6b6;
+  font-family: 'Work Sans';
+  font-style: normal;
+  height: 9.5px;
+  text-decoration: none;
+    font-size: 14px;
+  font-weight: 500;
+}
+.tableAttribute {
+  font-family: 'Work Sans';
+  font-size: 20px !important;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #464646 !important;
+}
+.attributePart {
+  margin-bottom: 5px;
+}
+.entityName {
+/*  width: 300px;
+  margin: 0 auto;*/
+  padding-top: 10px;
+}
+.entityNameField {
+  padding-top: 5px;
+  /*text-transform: uppercase;*/
+}
+.entityNameField input {
+  text-transform: uppercase;
+}
+.div1 {
+  width: 130px;
+  float: left;
+  margin-right: 8px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+.addSpaces{
+      width: 238px;
+    margin-left: 232px;
+    margin-top: -49px;
+    height: 0px;
+}
+.locationText{
+  
+}
+.xBtn {
+  text-decoration: none;
+  color: #888484;
+}
+.xBtn:focus, .xBtn:hover {
+  text-decoration: none;
+}
+
+.editComponentBtns {
+  margin-top: 5px;
+}
+/*.editComponentBtns RaisedButton[label="CANCEL"] {
+  float: right;
+}*/
+.newCardAttributeBtn {
+  text-decoration: none;
+  float: right;
+}
+.newCardAttributeBtn:focus, .newCardAttributeBtn:hover {
+  text-decoration: none;
+}
+.defaultOption span {
+  opacity: 0.5;
+  color: red;
+}
+.Select {
+
+  & .Select-control {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    margin: 4px 0;
+  }
+
+  & .Select-input,
+  & .Select-value,
+  & .Select-placeholder {
+    padding-left: 0 !important;
+    line-height: 36px !important;
+  }
+
+  &.is-focused .Select-control {
+    border-bottom: 2px solid #074684;
+    box-shadow: none;
+  }
+
+  &.is-disabled .Select-control {
+    background-color: transparent !important;
+  }
+
+  &.error {
+    .Select-control {
+      border-bottom: 2px solid #f44336;
+      box-shadow: none;
+    }
+  }
+
+}
